@@ -14,7 +14,11 @@ module.exports = {
           "front": "#23242E",
           "fronter": "#414453"
         },
-      }
+      },
+      fontFamily: {
+        sans: ["Gilroy", "sans-serif"],
+        inter : ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],
