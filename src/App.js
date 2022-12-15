@@ -1,11 +1,21 @@
+import { useState } from 'react';
 import './css/index.css';
 import Navbar from './components/Navbar';
+import Burger from './components/Burger';
 
 function App() {
+
+  const [navbarToggle, setNavbarToggle] = useState(false);
+
+  const navbarToggler = () => {
+    setNavbarToggle(!navbarToggle)
+  }
+ 
   return (
     <div className="relative">
-      <img className='object-cover h-40 w-80' src="" alt="logo" />
-      <Navbar />
+      <button className='fixed top-12 right-12 object-cover px-6 py-2 rounded-full text-4xl font-bold bg-back-fronter text-semigray z-[999]'>Ali Kerem Ata</button>
+      <Burger handleChange={navbarToggler}/>
+      <Navbar isOn={navbarToggle}/>
     </div>
   );
 }
