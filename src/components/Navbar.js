@@ -1,13 +1,79 @@
-export default function Navbar({isOn}) {
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
+export default function Navbar() {
+  const [isOn, setIsOn] = useState(false);
+
+  const toggleClass = () => {
+    setIsOn(!isOn);
+  }
 
   return (
-    <nav className={isOn ? 'active absolute top-0 left-0 w-[100vw] h-[100vh] bg-back z-[800] navbar transition-transform duration-500 ease-in-out' : 'absolute top-0 left-0 w-[100vw] h-[100vh] bg-back z-[800] navbar transition-transform duration-500 ease-in-out'}>
-      <ul>
-        <li>Ana Sayfa</li>
-        <li>Projelerim</li>
-        <li>Hakkımda</li>
-        <li>İletişim</li>
-      </ul>
-    </nav>
-  )
+    <div className="overflow-hidden">
+      <nav
+        className={
+          isOn
+            ? "absolute top-0 left-0 w-[99.4vw] h-[100vh] bg-back-front z-[800] navbar transition-transform duration-500 ease-in-out"
+            : "absolute top-0 left-0 w-[99.4vw] h-[100vh] bg-back-front z-[800] navbar transition-transform duration-500 ease-in-out deactive"
+        }
+      >
+        <ul className="flex flex-col items-center justify-center h-full gap-y-10">
+          <li className="group">
+            <NavLink
+              className="group-hover:text-transparent"
+              to="/"
+              onClick={toggleClass}
+            >
+              Ana Sayfa
+            </NavLink>
+          </li>
+          <li className="group">
+            <NavLink
+              className="group-hover:text-transparent"
+              to="/projects"
+              onClick={toggleClass}
+            >
+              Projelerim
+            </NavLink>
+          </li>
+          <li className="group">
+            <NavLink
+              className="group-hover:text-transparent"
+              to="/about"
+              onClick={toggleClass}
+            >
+              Hakkımda
+            </NavLink>
+          </li>
+          <li className="group">
+            <NavLink
+              className="group-hover:text-transparent"
+              to="/contact"
+              onClick={toggleClass}
+            >
+              İletişim
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+      <svg
+        className={isOn ? "ham ham6 fixed left-2 lg:left-6 top-0 bottom-0 my-auto z-[999] w-[60px] lg:w-[100px] active" : "ham ham6 fixed left-2 lg:left-6 top-0 bottom-0 my-auto z-[999] w-[60px] lg:w-[100px] "}
+        viewBox="0 0 100 100"
+        onClick={toggleClass}
+      >
+        <path
+          className="line top"
+          d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
+        />
+        <path
+          className="line middle"
+          d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272"
+        />
+        <path
+          className="line bottom"
+          d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272"
+        />
+      </svg>
+    </div>
+  );
 }
