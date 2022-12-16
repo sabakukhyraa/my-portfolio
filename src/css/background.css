@@ -7,17 +7,6 @@
   animation: bouncebg 25s infinite;
   position: relative;
 }
-.background-css:before {
-  backdrop-filter: blur(8px);
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
 
 @keyframes bouncebg {
   0%,
