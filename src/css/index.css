@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "animations";
+@import "background";
 @layer base {
   @font-face {
     font-family: "Gilroy";
@@ -34,4 +35,60 @@
     font-weight: 800;
     src: url("/public/fonts/Gilroy-ExtraBold.otf");
   }
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #C7C7C7 #696969;
+}
+
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #707070;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #C7C7C7;
+  border-radius: 8px;
+  border: 0px solid #ffffff;
+}
+
+.navbar li {
+  @apply hover:scale-105 transition-all duration-300 ease-in-out py-2;
+  background-clip: text;
+  background-position: center;
+}
+
+.navbar li a {
+  @apply text-7xl text-semigray font-semibold transition-all duration-300 ease-in-out;
+}
+
+.navabr li:nth-child(1) {
+  background-image: url('https://i1.pickpik.com/photos/430/170/411/new-york-city-empire-state-building-manhattan-nyc-preview.jpg');
+}
+l.navabr i:nth-child(2) {
+  background-image: url('https://st.depositphotos.com/1005844/1394/i/600/depositphotos_13943952-stock-photo-snowy-mountains.jpg');
+}
+l.navabr i:nth-child(3) {
+  background-image: url('https://www.cimri.com/blog/wp-content/uploads/2015/06/Manzara-Foto%C4%9Fraf%C4%B1.jpg');
+}
+l.navabr i:nth-child(4) {
+  background-image: url('https://images.pexels.com/photos/449018/pexels-photo-449018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+a.active {
+  color: transparent !important;
+}
+
+.skills {
+  @apply flex w-full gap-12 px-60;
+}
+
+.skills ul {
+  @apply grid w-full grid-cols-2 gap-12;
 }

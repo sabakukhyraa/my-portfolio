@@ -1,0 +1,35 @@
+.background-css {
+  background-image: url("https://cdn.pixabay.com/photo/2021/01/11/21/23/dots-5909731_960_720.png");
+  background-size: cover;
+  background-position: 50% 100%;
+  background-attachment: fixed;
+  backdrop-filter: opacity(10%);
+  animation: bouncebg 25s infinite;
+  position: relative;
+}
+.background-css:before {
+  backdrop-filter: blur(7px);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -20;
+}
+.background-css img {
+  -webkit-box-shadow: 0px 0px 75px 24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 75px 24px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 75px 24px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes bouncebg {
+  0%,
+  100% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 50% 0;
+  }
+}
