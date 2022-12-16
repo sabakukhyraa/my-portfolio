@@ -13,8 +13,8 @@ export default function Navbar() {
       <nav
         className={
           isOn
-            ? "absolute top-0 left-0 w-[99.4vw] h-[100vh] bg-back-front z-[800] navbar transition-transform duration-500 ease-in-out"
-            : "absolute top-0 left-0 w-[99.4vw] h-[100vh] bg-back-front z-[800] navbar transition-transform duration-500 ease-in-out deactive"
+            ? "fixed top-0 left-0 w-full h-[100vh] bg-back-front z-[800] navbar transition-transform duration-500 ease-in-out"
+            : "fixed top-0 left-0 w-full h-[100vh] bg-back-front z-[800] navbar transition-transform duration-500 ease-in-out deactive"
         }
       >
         <ul className="flex flex-col items-center justify-center h-full gap-y-10">

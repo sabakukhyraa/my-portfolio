@@ -68,16 +68,16 @@
   @apply text-7xl text-semigray font-semibold transition-all duration-300 ease-in-out;
 }
 
-.navabr li:nth-child(1) {
+.navbar li:nth-child(1) {
   background-image: url('https://i1.pickpik.com/photos/430/170/411/new-york-city-empire-state-building-manhattan-nyc-preview.jpg');
 }
-l.navabr i:nth-child(2) {
+.navbar li:nth-child(2) {
   background-image: url('https://st.depositphotos.com/1005844/1394/i/600/depositphotos_13943952-stock-photo-snowy-mountains.jpg');
 }
-l.navabr i:nth-child(3) {
+.navbar li:nth-child(3) {
   background-image: url('https://www.cimri.com/blog/wp-content/uploads/2015/06/Manzara-Foto%C4%9Fraf%C4%B1.jpg');
 }
-l.navabr i:nth-child(4) {
+.navbar li:nth-child(4) {
   background-image: url('https://images.pexels.com/photos/449018/pexels-photo-449018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 }
 
@@ -86,9 +86,17 @@ a.active {
 }
 
 .skills {
-  @apply flex w-full gap-12 px-60;
+  @apply flex flex-col w-full gap-12 px-60;
+}
+
+.skills h3 {
+  @apply text-2xl text-gray font-semibold p-2;
 }
 
 .skills ul {
   @apply grid w-full grid-cols-2 gap-12;
+}
+
+.skills ul li {
+  @apply bg-back-fronter rounded-md;
 }

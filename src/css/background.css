@@ -1,5 +1,5 @@
 .background-css {
-  background-image: url("https://cdn.pixabay.com/photo/2021/01/11/21/23/dots-5909731_960_720.png");
+  background-image: url("../assets/bg.png");
   background-size: cover;
   background-position: 50% 100%;
   background-attachment: fixed;
@@ -8,7 +8,7 @@
   position: relative;
 }
 .background-css:before {
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(8px);
   content: "";
   display: block;
   height: 100%;
@@ -16,12 +16,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -20;
-}
-.background-css img {
-  -webkit-box-shadow: 0px 0px 75px 24px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 75px 24px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 75px 24px rgba(0, 0, 0, 0.75);
+  z-index: -1;
 }
 
 @keyframes bouncebg {
