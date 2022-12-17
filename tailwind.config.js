@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
       sm: "640px",
@@ -18,15 +16,18 @@ module.exports = {
         gray: "#C6C6C6",
         back: {
           DEFAULT: "#181A20",
-          "front": "#23242E",
-          "fronter": "#414453"
+          front: "#23242E",
+          fronter: "#414453",
         },
       },
       fontFamily: {
         sans: ["Gilroy", "sans-serif"],
-        inter : ["Inter", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
+      boxShadow: {
+        custom: "inset 0px 0px 41px -10px rgba(0,0,0,0.45)",
       },
     },
   },
   plugins: [],
-}
+};

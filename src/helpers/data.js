@@ -24,7 +24,7 @@ export const techsIUse = [
         skillLevel: 0.6,
         techLogo: reactLogo,
         techBaseColor: "#61DBFB",
-        thoughts: "",
+        thoughts: "It's easy to find what you want to do with React on the internet. I did some projects with React and it was fun.",
       },
       {
         skillName: "Vue.js",
@@ -44,7 +44,7 @@ export const techsIUse = [
         skillName: "Tailwind CSS",
         skillLevel: 0.9,
         techLogo: tailwindLogo,
-        techBaseColor: "rgb(34, 178, 208)",
+        techBaseColor: "#11aAEe",
         thoughts: "I've been working with Tailwind for a long time. I used it in many projects like Arçelik/Beko's PerakendeTV.",
       },
       {
