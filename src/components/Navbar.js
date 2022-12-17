@@ -24,7 +24,7 @@ export default function Navbar() {
               to="/"
               onClick={toggleClass}
             >
-              Ana Sayfa
+              Home
             </NavLink>
           </li>
           <li className="group">
@@ -33,7 +33,7 @@ export default function Navbar() {
               to="/projects"
               onClick={toggleClass}
             >
-              Projelerim
+              Projects
             </NavLink>
           </li>
           <li className="group">
@@ -42,7 +42,7 @@ export default function Navbar() {
               to="/about"
               onClick={toggleClass}
             >
-              Hakkımda
+              About Me
             </NavLink>
           </li>
           <li className="group">
@@ -51,7 +51,7 @@ export default function Navbar() {
               to="/contact"
               onClick={toggleClass}
             >
-              İletişim
+              Contact
             </NavLink>
           </li>
         </ul>

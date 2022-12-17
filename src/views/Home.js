@@ -62,9 +62,6 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-8 pb-24">
-            <h1 className="self-center mb-8 text-5xl font-bold text-gray">
-              Techs I Use:
-            </h1>
             <div className="mb-24 skills">
               <h2 className="font-light text-7xl text-semigray">Frontend</h2>
               <p className="text-lg font-medium text-gray">
