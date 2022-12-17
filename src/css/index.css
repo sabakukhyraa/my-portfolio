@@ -38,13 +38,18 @@
 }
 
 ::-moz-selection {
-  color: #181A20;
-  background: #C6C6C6;
+  color: #181a20;
+  background: #c6c6c6;
 }
 
 ::selection {
-  color: #181A20;
-  background: #C6C6C6;
+  color: #181a20;
+  background: #c6c6c6;
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #a0f
 }
 
 * {
