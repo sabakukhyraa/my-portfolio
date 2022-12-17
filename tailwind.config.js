@@ -7,9 +7,19 @@ module.exports = {
       md: "768px",
       lg: "992px",
       xl: "1080px",
-      "2xl": "1294px",
+      "2xl": "1174px",
+      "3xl": "1374px",
+      "4xl": "1504px",
+      "5xl": "1750px",
+      "6xl": "2080px",
     },
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+        },
+      },
       colors: {
         darkgray: "#707070",
         semigray: "#A0A0A0",

@@ -44,5 +44,5 @@
 } */
 
 .navbar.deactive {
-  transform: translateX(-100vw) !important;
+  transform: translateX(-160vw) !important;
 }
