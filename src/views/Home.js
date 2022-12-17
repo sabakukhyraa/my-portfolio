@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 import { techsIUse } from "../helpers/data";
 import AOS from "aos";
-import "aos/dist/aos.css";
+
 export default function Home() {
+
   useEffect(() => {
     AOS.init({
       once: true,
@@ -10,28 +11,28 @@ export default function Home() {
   }, []);
 
   const skills = (array) =>
-    array.skills.map((skill, index) => (
+    array.map((item, index) => (
       <li
         data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
         key={index}
         className={`flex flex-col h-full rounded-md`}
       >
         <h3 className="p-2 text-2xl font-semibold text-gray">
-          {skill.skillName}
+          {item.itemName}
         </h3>
         <div
           style={{
-            boxShadow: "inset 0px 0px 31px -20px" + skill.techBaseColor,
+            boxShadow: "inset 0px 0px 31px -20px" + item.itemBaseColor,
           }}
           className="flex justify-between h-full gap-4 p-4 m-1 transition-all duration-300 ease-in-out rounded-lg bg-back-front hover:scale-105"
         >
           <img
             className="object-contain w-20 h-20 lg:w-40 lg:h-40 rounded-lg aspect-square"
-            src={`${skill.techLogo}`}
-            alt={skill.skillName}
+            src={`${item.itemLogo}`}
+            alt={item.itemName}
           />
           <div className="flex flex-col place-content-between">
-            <p className="text-lg text-gray">{skill.thoughts}</p>
+            <p className="text-lg text-gray">{item.thoughts}</p>
           </div>
         </div>
       </li>
@@ -63,21 +64,21 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-8 pb-24">
-            <div className="mb-24 skills">
+            <div className="mb-24 cards-wrapper">
               <h2 className="font-light text-7xl text-semigray">Frontend</h2>
               <p className="text-lg font-medium text-gray">
                 I'm working as a Frontend Developer for 1.5 years. I think
                 writing Frontend is perfect for reducing stress!
               </p>
-              <ul>{skills(techsIUse[0])}</ul>
+              <ul>{skills(techsIUse.Frontend)}</ul>
             </div>
-            <div className="skills">
+            <div className="cards-wrapper">
               <h2 className="font-light text-7xl text-semigray">Backend</h2>
               <p className="text-lg font-medium text-gray">
                 I'm pretty new at Backend. I'm trying to learn everything and
                 while I learn Backend, I understand Frontend better.
               </p>
-              <ul>{skills(techsIUse[1])}</ul>
+              <ul>{skills(techsIUse.Backend)}</ul>
             </div>
           </div>
         </div>
