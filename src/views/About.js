@@ -2,8 +2,8 @@ import { experiences } from "../helpers/data";
 export default function About() {
 
   const carrierHistory = experiences.map((experience, index) => 
-    <li key={index} className="flex items-center justify-between gap-8 p-8 rounded-xl bg-back-front">
-      <img className="self-start object-contain w-32 h-32 rounded-lg lg:self-center lg:w-52 lg:h-52 aspect-square" src={experience.companyLogo} alt={experience.companyName} />
+    <li key={index} className="flex flex-col items-center justify-between gap-8 p-8 lg:flex-row rounded-xl bg-back-front">
+      <img className="self-start object-contain w-24 h-24 rounded-lg lg:self-center lg:w-52 lg:h-52 aspect-square" src={experience.companyLogo} alt={experience.companyName} />
       <div className="flex flex-col justify-center gap-2">
         <h2 className="text-4xl font-bold lg:text-6xl">{experience.companyName}</h2>
         <h3 className="text-xl font-bold lg:text-2xl">{experience.title}</h3>
