@@ -11,6 +11,8 @@ import laravelLogo from "../assets/laravel.png";
 import linkedinLogo from "../assets/linkedin.png";
 import githubLogo from "../assets/github.png";
 import instagramLogo from "../assets/instagram.png";
+import epigraLogo from "../assets/epigra.png";
+import fiLogo from "../assets/fi.png";
 export const techsIUse = {
   Frontend: [
     {
@@ -102,5 +104,34 @@ export const socialMedia = [
   },
 ];
 
+export const contents = [
+  "I'm 21.",
+  "I'm from Istanbul, Turkiye.",
+  "I'm studying Information Technologies Engineering at Piri Reis University.",
+  "I'm learning everything about web.",
+  "I believe engineering is the perfect planning of solutions with foresight.",
+  "My dream is to be a great engineer.",
+];
 
-export const contents = ["I'm 21.", "I'm from Istanbul, Turkiye.", "I'm studying Information Technologies Engineering at Piri Reis University.", "I'm learning everything about web.", "I believe engineering is the perfect planning of solutions with foresight.", "My dream is to be a great engineer."]
+export const experiences = [
+  {
+    companyName: "Epigra",
+    companyLogo: epigraLogo,
+    title: "Frontend Developer",
+    since: "June 2022",
+    still: false,
+    until: "Dec 2022",
+    thoughts:
+      "It was my first job. I started as an intern and got the job in the end! I gained amazing experience there. Excellent co-workers. Fun projects!",
+  },
+  {
+    companyName: "Freelance",
+    companyLogo: fiLogo,
+    title: "Frontend Developer",
+    since: "Jan 2022",
+    still: true,
+    until: "",
+    thoughts:
+      "I was doing static websites at the beginning that I don't proud of... I learned so much stuff with those projects but still, I can't even look at what I did :D. And I do better web applications with React and Vue these days.",
+  },
+];
