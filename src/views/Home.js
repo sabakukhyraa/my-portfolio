@@ -18,7 +18,7 @@ export default function Home() {
         key={index}
         className={`flex flex-col h-full rounded-md`}
       >
-        <h3 className="p-2 text-2xl font-semibold text-gray">
+        <h3 className="py-2 text-2xl font-semibold text-gray">
           {item.itemName}
         </h3>
         <div
