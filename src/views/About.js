@@ -29,11 +29,11 @@ export default function About() {
         <div className="flex flex-col">
           <div className="flex flex-col items-center justify-center pb-44 lg:pb-32 lg:px-0 px-8 gap-8 h-[100vh]">
             <img
-              className="object-contain w-40 h-40 rounded-full shadow-lg aspect-square"
+              className="object-contain rounded-full shadow-lg w-52 h-52 aspect-square"
               src="/about-me.png"
               alt="about"
             />
-            <div className="relative flex justify-center w-full text-4xl font-medium text-center text-gray speech">
+            <div className="relative flex justify-center w-full text-4xl font-medium text-center lg:text-6xl text-gray speech">
               {speechLoop}
             </div>
           </div>
