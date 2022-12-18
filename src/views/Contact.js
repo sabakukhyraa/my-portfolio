@@ -17,14 +17,14 @@ export default function Contact() {
       >
         <a className="flex flex-col h-full rounded-md" href={item.url}>
           <div
-            className="flex justify-start items-center h-full gap-4 p-4 m-1 transition-all duration-300 ease-in-out rounded-lg hover:scale-105"
+            className="flex items-center justify-start h-full gap-4 p-4 m-1 transition-all duration-300 ease-in-out rounded-lg hover:scale-105"
           >
             <img
               className="object-contain w-12 h-12 rounded-lg aspect-square"
               src={`${item.itemLogo}`}
               alt={item.itemName}
             />
-            <h1 className="font-bold text-4xl text-gray">{item.itemName}</h1>
+            <h1 className="text-4xl font-bold text-gray">{item.itemName}</h1>
           </div>
         </a>
       </li>
@@ -35,10 +35,10 @@ export default function Contact() {
       <div className="container">
         <div className="flex items-center flex-col h-[100vh] gap-12">
           <div>
-            <h1 className="flex items-center py-8 lg:py-24 text-7xl font-bold text-gray">Contact me</h1>
+            <h1 className="flex items-center py-8 font-bold lg:py-24 text-7xl text-gray">Contact me</h1>
           </div>
           <div>
-            <a className="text-3xl font-semibold text-gray" href="mailto:aliatabusiness@gmail.com">aliatabusiness@gmail.com</a>
+            <a className="py-4 text-5xl font-semibold text-gray" href="mailto:aliatabusiness@gmail.com">aliatabusiness@gmail.com</a>
           </div>
           <div>
             <ul className="grid grid-cols-2">{cards(socialMedia)}</ul>

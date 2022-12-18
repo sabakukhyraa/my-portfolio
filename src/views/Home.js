@@ -7,6 +7,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init({
       once: true,
+      duration: 800,
     });
   }, []);
 
@@ -27,7 +28,7 @@ export default function Home() {
           className="flex justify-between h-full gap-4 p-4 m-1 transition-all duration-300 ease-in-out rounded-lg bg-back-front hover:scale-105"
         >
           <img
-            className="object-contain w-20 h-20 lg:w-40 lg:h-40 rounded-lg aspect-square"
+            className="object-contain w-20 h-20 rounded-lg lg:w-40 lg:h-40 aspect-square"
             src={`${item.itemLogo}`}
             alt={item.itemName}
           />
