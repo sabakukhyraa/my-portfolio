@@ -23,7 +23,7 @@ export default function About() {
               src="/about-me.png"
               alt="about"
             />
-            <div className="relative flex justify-center w-full text-2xl font-medium text-center lg:text-6xl text-gray">
+            <div className="relative flex justify-center w-full text-xl font-medium text-center lg:text-6xl text-gray">
               <p>I'm 21 from Istanbul, Turkiye. Studying Information Technologies Engineering at Piri Reis University. And I'm learning everything about web. I believe engineering is the perfect planning of solutions with foresight. My dream is to be a great engineer.</p>
             </div>
           </div>
