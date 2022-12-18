@@ -35,13 +35,13 @@ export default function Contact() {
       <div className="container">
         <div className="flex items-center flex-col h-[100vh] gap-12">
           <div>
-            <h1 className="flex items-center py-8 font-bold lg:py-24 text-7xl text-gray">Contact me</h1>
+            <h1 className="flex items-center py-8 pt-12 font-bold text-center lg:py-24 text-7xl text-gray">Contact me</h1>
           </div>
           <div>
-            <a className="py-4 text-5xl font-semibold text-gray" href="mailto:aliatabusiness@gmail.com">aliatabusiness@gmail.com</a>
+            <a className="py-4 text-xl font-semibold lg:text-5xl text-gray" href="mailto:aliatabusiness@gmail.com">aliatabusiness@gmail.com</a>
           </div>
           <div>
-            <ul className="grid grid-cols-2">{cards(socialMedia)}</ul>
+            <ul className="grid grid-cols-1 lg:grid-cols-2">{cards(socialMedia)}</ul>
           </div>
         </div>
       </div>
