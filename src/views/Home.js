@@ -1,8 +1,29 @@
-import { useEffect } from "react";
-import { techsIUse } from "../helpers/data";
+import { useEffect, useState } from "react";
+import { techsIUse, contents } from "../helpers/data";
 import AOS from "aos";
 
 export default function Home() {
+  const [activeSpeech, setActiveSpeech] = useState(0);
+
+  const bilmemne = setInterval(() => {
+    if (activeSpeech === contents.length - 1) {
+      setActiveSpeech(0);
+      clearInterval(bilmemne);
+    } else {
+      setActiveSpeech(activeSpeech + 1);
+      clearInterval(bilmemne);
+    }
+  }, 3600);
+
+  let speechLoop = contents.map((content, index) => (
+    <p
+      key={index}
+      style={{ opacity: activeSpeech === index && 100 + "%" }}
+      className="absolute w-full transition-opacity duration-200 ease-in opacity-0"
+    >
+      {content}
+    </p>
+  ));
 
   useEffect(() => {
     AOS.init({
@@ -52,17 +73,24 @@ export default function Home() {
               src="/profile.png"
               alt="profile"
             />
-            <h1 className="text-5xl font-bold text-gray neon-text">Ali Kerem Ata</h1>
-            <h2 className="text-2xl font-semibold text-gray">Frontend Developer</h2>
+            <h1 className="text-5xl font-bold text-gray neon-text">
+              Ali Kerem Ata
+            </h1>
+            <h2 className="text-2xl font-semibold text-gray">
+              Frontend Developer
+            </h2>
             <div className="text-center">
               <p className="text-xl font-semibold text-gray">
-                Welcome! You can find my personal information, projects and career
-                history on this website.
+                Welcome! You can find my personal information, projects and
+                career history on this website.
               </p>
               <p className="text-xl font-semibold text-gray">
                 If you desire to work with me please contact me.
               </p>
             </div>
+          </div>
+          <div data-aos="zoom-in" className="relative flex justify-center items-center w-full px-8 text-4xl font-medium text-center lg:text-6xl text-gray h-[100vh]">
+            {speechLoop}
           </div>
           <div className="flex flex-col items-center justify-center gap-8 pb-24">
             <div className="mb-24 cards-wrapper">
