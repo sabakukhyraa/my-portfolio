@@ -110,7 +110,7 @@ export const contents = [
   "I'm studying Information Technologies Engineering at Piri Reis University.",
   "I'm learning everything about web.",
   "I believe engineering is the perfect planning of solutions with foresight.",
-  "My dream is to be a great engineer.",
+  "My dream is to be one of the best engineers.",
 ];
 
 export const experiences = [

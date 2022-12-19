@@ -24,7 +24,7 @@ export default function About() {
               alt="about"
             />
             <div className="relative flex justify-center w-full text-xl font-medium text-center lg:text-6xl text-gray">
-              <p>I'm 21 from Istanbul, Turkiye. Studying Information Technologies Engineering at Piri Reis University. And I'm learning everything about web. I believe engineering is the perfect planning of solutions with foresight. My dream is to be a great engineer.</p>
+              <p>I'm 21 from Istanbul, Turkiye. Studying Information Technologies Engineering at Piri Reis University with 100% scholarship. And I'm learning everything about web. I believe engineering is the perfect planning of solutions with foresight. My dream is to be one of the best engineers.</p>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center w-full px-8 py-16 lg:w-3/4">
