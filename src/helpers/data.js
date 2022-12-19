@@ -141,7 +141,7 @@ export const projects = [
   {
     name: "Arçelik/Beko Perakende TV",
     link: "",
-    image: "/profile.png",
+    image: "https://cdn.pixabay.com/photo/2016/02/10/21/59/landscape-1192669__480.jpg",
   },
   {
     name: "Arçelik/Beko Perakende TV",
