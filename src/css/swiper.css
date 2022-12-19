@@ -1,0 +1,22 @@
+.swiper-slide {
+  @apply w-full flex flex-col justify-center items-center;
+}
+.swiper-slide a {
+  @apply w-full flex flex-col justify-center items-center bg-back-front rounded-xl;
+}
+.swiper-slide img {
+  @apply block w-full lg:aspect-video rounded-xl object-contain;
+}
+.swiper-slide h3 {
+  @apply text-2xl 2xl:text-3xl text-gray font-medium py-2;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+.swiper-pagination {
+  @apply !static !w-auto p-2 bg-gray rounded-full flex items-center
+}
+.swiper-pagination-bullet {
+  @apply !p-[6px] !bg-back
+}

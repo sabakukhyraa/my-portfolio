@@ -135,3 +135,47 @@ export const experiences = [
       "I was doing static websites at the beginning that I don't proud of... I learned so much stuff with those projects but still, I can't even look at what I did :D. And I do better web applications with React and Vue these days.",
   },
 ];
+
+
+export const projects = [
+  {
+    name: "Arçelik/Beko Perakende TV",
+    link: "",
+    image: "/profile.png",
+  },
+  {
+    name: "Arçelik/Beko Perakende TV",
+    link: "",
+    image: fiLogo,
+  },
+  {
+    name: "Arçelik/Beko Perakende TV",
+    link: "",
+    image: fiLogo,
+  },
+  {
+    name: "Arçelik/Beko Perakende TV",
+    link: "",
+    image: fiLogo,
+  },
+  {
+    name: "Arçelik/Beko Perakende TV",
+    link: "",
+    image: fiLogo,
+  },
+  {
+    name: "Arçelik/Beko Perakende TV",
+    link: "",
+    image: fiLogo,
+  },
+  {
+    name: "Arçelik/Beko Perakende TV",
+    link: "",
+    image: fiLogo,
+  },
+  {
+    name: "Arçelik/Beko Perakende TV",
+    link: "",
+    image: fiLogo,
+  },
+]
