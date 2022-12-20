@@ -8,7 +8,10 @@
   @apply block w-full lg:aspect-video rounded-xl object-contain;
 }
 .swiper-slide h3 {
-  @apply text-2xl 2xl:text-3xl text-gray font-medium py-2;
+  @apply text-2xl 2xl:text-3xl text-white font-medium py-2;
+}
+.swiper-slide p {
+  @apply text-lg 2xl:text-xl text-gray font-medium py-2 text-center;
 }
 .swiper-button-prev,
 .swiper-button-next {

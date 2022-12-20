@@ -136,46 +136,18 @@ export const experiences = [
   },
 ];
 
-
 export const projects = [
   {
     name: "Arçelik/Beko Perakende TV",
     link: "",
-    image: "https://cdn.pixabay.com/photo/2016/02/10/21/59/landscape-1192669__480.jpg",
+    image: "/ptv.jpg",
+    description:
+      "Lots of contributions. Not published yet. A video-sharing and social media platform for company employees. I've learned so many things with this project.",
   },
   {
-    name: "Arçelik/Beko Perakende TV",
-    link: "",
-    image: fiLogo,
+    name: "Epigra 2022 Internal Project",
+    link: "http://2022.epigra.com/",
+    image: "/epigra.png",
+    description: "Small contributions. A website for Epigra.",
   },
-  {
-    name: "Arçelik/Beko Perakende TV",
-    link: "",
-    image: fiLogo,
-  },
-  {
-    name: "Arçelik/Beko Perakende TV",
-    link: "",
-    image: fiLogo,
-  },
-  {
-    name: "Arçelik/Beko Perakende TV",
-    link: "",
-    image: fiLogo,
-  },
-  {
-    name: "Arçelik/Beko Perakende TV",
-    link: "",
-    image: fiLogo,
-  },
-  {
-    name: "Arçelik/Beko Perakende TV",
-    link: "",
-    image: fiLogo,
-  },
-  {
-    name: "Arçelik/Beko Perakende TV",
-    link: "",
-    image: fiLogo,
-  },
-]
+];

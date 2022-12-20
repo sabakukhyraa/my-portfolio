@@ -13,10 +13,11 @@ export default function Projects() {
 
   const projectSlide = projects.map((project, index) => (
     <SwiperSlide key={index}>
-      <a href="https://www.google.com">
+      <a href={project.link}>
         <img src={project.image} alt={`project-${project.name}`} />
       </a>
       <h3>{project.name}</h3>
+      <p>{project.description}</p>
     </SwiperSlide>
   ));
 
@@ -24,6 +25,7 @@ export default function Projects() {
     <div className="background-css">
       <div className="container">
         <div className="flex flex-col items-center justify-center h-[100vh] gap-12 lg:px-24 lg:py-3">
+          <h1 className="mt-8 text-2xl font-light text-center text-gray">Waiting for permission to share my projects...</h1>
           <Swiper
             breakpoints={{
               968: {
@@ -37,7 +39,7 @@ export default function Projects() {
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
-              depth: 300,
+              depth: 270,
               modifier: 1,
               slideShadows: false,
             }}
