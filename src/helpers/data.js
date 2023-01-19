@@ -138,6 +138,13 @@ export const experiences = [
 
 export const projects = [
   {
+    name: "Ziv4 Trade Pilot & Project Setup",
+    link: "https://ziv4-pilot.netlify.app/",
+    image: "/ziv4.png",
+    description:
+      "It's just a test project and ready to connect with Backend. And that Donut Chart right there is a talent, I tell you that...",
+  },
+  {
     name: "Arçelik/Beko Perakende TV",
     link: "",
     image: "/ptv.jpg",
