@@ -16,8 +16,10 @@ export default function Projects() {
       <a href={project.link}>
         <img src={project.image} alt={`project-${project.name}`} />
       </a>
-      <h3>{project.name}</h3>
-      <p>{project.description}</p>
+      <div className="bottom-0 text-center">
+        <h3>{project.name}</h3>
+        <p>{project.description}</p>
+      </div>
     </SwiperSlide>
   ));
 
@@ -25,7 +27,7 @@ export default function Projects() {
     <div className="background-css">
       <div className="container">
         <div className="flex flex-col items-center justify-center h-[100vh] gap-12 lg:px-24 lg:py-3">
-          <h1 className="mt-8 text-2xl font-light text-center text-gray">Waiting for permission to share my projects...</h1>
+          <h1 className="pt-6 text-2xl font-light text-center text-gray">Waiting for permission to share my projects...</h1>
           <Swiper
             breakpoints={{
               968: {
