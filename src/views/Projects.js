@@ -11,6 +11,17 @@ export default function Projects() {
     clickable: true,
   };
 
+  const tagMapper = (tagArray) => {
+    return tagArray.map((logo, index) => (
+      <img
+        className="!object-contain !w-8 !h-8 !aspect-square !rounded-none"
+        src={logo}
+        alt=""
+        key={index}
+      />
+    ));
+  };
+
   const projectSlide = projects.map((project, index) => (
     <SwiperSlide key={index}>
       <a href={project.link}>
@@ -18,6 +29,9 @@ export default function Projects() {
       </a>
       <div className="bottom-0 text-center">
         <h3>{project.name}</h3>
+        <div className="flex items-center justify-center gap-4">
+          {tagMapper(project.tags)}
+        </div>
         <p>{project.description}</p>
       </div>
     </SwiperSlide>
@@ -27,7 +41,9 @@ export default function Projects() {
     <div className="background-css">
       <div className="container">
         <div className="flex flex-col items-center justify-center h-[100vh] gap-12 lg:px-24 lg:py-3">
-          <h1 className="pt-6 text-2xl font-light text-center text-gray">Waiting for permission to share my projects...</h1>
+          <h1 className="pt-6 text-2xl font-light text-center text-gray">
+            Waiting for permission to share the projects I worked on...
+          </h1>
           <Swiper
             breakpoints={{
               968: {
