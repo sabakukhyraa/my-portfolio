@@ -13,6 +13,7 @@ import githubLogo from "../assets/github.png";
 import instagramLogo from "../assets/instagram.png";
 import epigraLogo from "../assets/epigra.png";
 import fiLogo from "../assets/fi.png";
+import sassLogo from "../assets/sass.png"
 export const techsIUse = {
   Frontend: [
     {
@@ -138,23 +139,40 @@ export const experiences = [
 
 export const projects = [
   {
+    name: "Arçelik/Beko Perakende TV",
+    link: "",
+    image: "/ptv.jpg",
+    description:
+    "The biggest project that I worked on. The source of my confidence. A video-sharing and social media platform for company employees. I've learned so many things with this project.",
+    tags: [vueLogo , tailwindLogo]
+  },
+  {
     name: "Ziv4 Trade Pilot & Project Setup",
     link: "https://ziv4-pilot.netlify.app/",
     image: "/ziv4.png",
     description:
       "It's just a test project and ready to connect with Backend. And that Donut Chart right there is a talent, I tell you that...",
-  },
-  {
-    name: "Arçelik/Beko Perakende TV",
-    link: "",
-    image: "/ptv.jpg",
-    description:
-      "Lots of contributions. Not published yet. A video-sharing and social media platform for company employees. I've learned so many things with this project.",
+    tags: [reactLogo, tailwindLogo]
   },
   {
     name: "Epigra 2022 Internal Project",
     link: "http://2022.epigra.com/",
     image: "/epigra.png",
     description: "Small contributions. A website for Epigra.",
+    tags: [sassLogo, jsLogo, bootstrapLogo]
+  },
+  {
+    name: "İstaç",
+    link: "#",
+    image: "/null.jpg",
+    description: "Small contributions like forms.",
+    tags: [vueLogo, tailwindLogo]
+  },
+  {
+    name: "Eczacıbaşı",
+    link: "#",
+    image: "/null.jpg",
+    description: "Small contributions like bug fixing.",
+    tags: [sassLogo, jsLogo, bootstrapLogo]
   },
 ];
