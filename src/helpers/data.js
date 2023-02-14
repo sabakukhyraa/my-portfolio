@@ -129,7 +129,7 @@ export const experiences = [
     title: "Frontend Developer",
     since: "June 2022",
     still: false,
-    until: "Dec 2022",
+    until: "Jan 2023",
     thoughts:
       "It was my first job. I started as an intern and got the job in the end! I gained amazing experience there. Excellent co-workers. Fun projects!",
   },
