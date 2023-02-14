@@ -1,4 +1,5 @@
 import jsLogo from "../assets/js.png";
+import tsLogo from "../assets/ts.png";
 import reactLogo from "../assets/react.png";
 import vueLogo from "../assets/vue.png";
 import cssLogo from "../assets/css.png";
@@ -21,21 +22,28 @@ export const techsIUse = {
       itemLogo: jsLogo,
       itemBaseColor: "#F0DB4F",
       thoughts:
-        "I really love JS! It's my favorite. I find it very beautiful language. Love the frameworks, using it all the time.",
+        "I really love JS! It's my favorite language.",
+    },
+    {
+      itemName: "Typescript",
+      itemLogo: tsLogo,
+      itemBaseColor: "#007acc",
+      thoughts:
+        "It can be useful in large-scale projects like 100+ classes and 10+ developers.",
     },
     {
       itemName: "React.js",
       itemLogo: reactLogo,
       itemBaseColor: "#61DBFB",
       thoughts:
-        "It's easy to find what you want to do with React on the internet. I did some projects with React and it was fun.",
+        "It's easy to find what you want to do with React on the internet. I did some projects with React and I'm pretty confident with it.",
     },
     {
       itemName: "Vue.js",
       itemLogo: vueLogo,
       itemBaseColor: "#41B883",
       thoughts:
-        "I worked with Vue3/Composition API in Epigra for 7 months. Learned a lot about Frontend with Vue.",
+        "I worked with Vue3/Composition&Options API in Epigra for 7 months. Learned a lot about Frontend with Vue.",
     },
     {
       itemName: "CSS",
@@ -49,14 +57,14 @@ export const techsIUse = {
       itemLogo: tailwindLogo,
       itemBaseColor: "#11aAEe",
       thoughts:
-        "I've been working with Tailwind for a long time. I used it in many projects like Arçelik/Beko's PerakendeTV.",
+        "I've been working with Tailwind for a long time. Although I don't like how they market CSS properties as their own properties, I use it for the speed and convenience it provides.",
     },
     {
       itemName: "Bootstrap",
       itemLogo: bootstrapLogo,
       itemBaseColor: "#8f4Cff",
       thoughts:
-        "I use bootstrap when I need to make quick projects. I really like the UI Components of Bootstrap.",
+        "I use bootstrap when I need to make quick projects. Great UI Components.",
     },
   ],
   Backend: [
@@ -82,7 +90,7 @@ export const techsIUse = {
       itemName: "PHP/Laravel",
       itemLogo: laravelLogo,
       itemBaseColor: "#ff2222",
-      thoughts: "",
+      thoughts: "I've some projects with Laravel but I didn't like the documentation.",
     },
   ],
 };
