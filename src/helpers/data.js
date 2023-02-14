@@ -165,7 +165,7 @@ export const projects = [
     name: "Agenda Project",
     link: "https://your-agenda.netlify.app/",
     image: "/agenda-react.png",
-    description: "Small app to understand state managment of React without Redux better.",
+    description: "Small app to understand state managment of React better.",
     tags: [reactLogo, tailwindLogo]
   },
   {
