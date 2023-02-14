@@ -162,6 +162,13 @@ export const projects = [
     tags: [sassLogo, jsLogo, bootstrapLogo]
   },
   {
+    name: "Agenda Project",
+    link: "https://your-agenda.netlify.app/",
+    image: "/agenda-react.png",
+    description: "Small app to understand state managment of React without Redux better.",
+    tags: [reactLogo, tailwindLogo]
+  },
+  {
     name: "İstaç",
     link: "#",
     image: "/null.jpg",
