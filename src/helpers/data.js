@@ -22,7 +22,7 @@ export const techsIUse = {
       itemLogo: jsLogo,
       itemBaseColor: "#F0DB4F",
       thoughts:
-        "I really love JS! It's my favorite language.",
+        "I really love JS! It's just perfect and it's my favorite language.",
     },
     {
       itemName: "Typescript",
