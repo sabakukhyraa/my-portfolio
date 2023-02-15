@@ -43,6 +43,7 @@ export default function Projects() {
         <div className="flex flex-col items-center justify-center h-[100vh] gap-12 lg:px-24 lg:py-3">
           <h1 className="pt-6 text-2xl font-light text-center text-gray">
             Waiting for permission to share the projects I worked on...
+            (click the projects to see them)
           </h1>
           <Swiper
             breakpoints={{

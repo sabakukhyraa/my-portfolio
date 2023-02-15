@@ -164,9 +164,9 @@ export const projects = [
   },
   {
     name: "Epigra 2022 Internal Project",
-    link: "http://2022.epigra.com/",
+    link: "http://epigra.com/",
     image: "/epigra.png",
-    description: "Small contributions. A website for Epigra.",
+    description: "A website for Epigra. Small contributions. Excellent design. The project I had the most difficulty with in its UI.",
     tags: [sassLogo, jsLogo, bootstrapLogo]
   },
   {
@@ -174,6 +174,13 @@ export const projects = [
     link: "https://your-agenda.netlify.app/",
     image: "/agenda-react.png",
     description: "Small app to understand state managment of React better.",
+    tags: [reactLogo, tailwindLogo]
+  },
+  {
+    name: "Fifa Cards",
+    link: "https://fifa-cards-react.netlify.app/",
+    image: "/fifa-cards.png",
+    description: "React practice with a fifa card market and filter.",
     tags: [reactLogo, tailwindLogo]
   },
   {
