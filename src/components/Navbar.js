@@ -57,7 +57,7 @@ export default function Navbar() {
         </ul>
       </nav>
       <svg
-        className={isOn ? "ham ham6 fixed left-0 lg:left-6 top-0 bottom-0 my-auto z-[999] w-[50px] lg:w-[100px] active" : "ham ham6 fixed left-0 lg:left-6 top-0 bottom-0 my-auto z-[999] w-[50px] lg:w-[100px] "}
+        className={`ham ham6 fixed left-0 lg:left-6 top-0 bottom-0 my-auto z-[999] w-[50px] lg:w-[100px] ${isOn && "active"}`}
         viewBox="0 0 100 100"
         onClick={toggleClass}
       >
