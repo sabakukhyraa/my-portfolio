@@ -40,7 +40,7 @@ export default function Projects() {
   return (
     <div className="background-css">
       <div className="container">
-        <div className="flex flex-col items-center justify-center h-[100vh] gap-12 lg:px-24 lg:py-3">
+        <div className="flex flex-col items-center justify-center min-h-screen gap-12 py-12 lg:px-24 lg:py-3">
           <h1 className="pt-6 text-2xl font-light text-center text-gray">
             Waiting for permission to share the projects I worked on...
             (click the projects to see them)

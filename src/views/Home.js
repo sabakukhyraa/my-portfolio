@@ -53,8 +53,8 @@ export default function Home() {
             src={`${item.itemLogo}`}
             alt={item.itemName}
           />
-          <div className="flex flex-col place-content-between">
-            <p className="text-lg text-gray">{item.thoughts}</p>
+          <div className="flex flex-col overflow-hidden place-content-between">
+            <p className="text-lg break-words whitespace-pre-wrap text-gray">{item.thoughts}</p>
           </div>
         </div>
       </li>
@@ -65,7 +65,7 @@ export default function Home() {
       <div className="container">
         <div className="flex flex-col">
           <div
-            className="flex flex-col items-center justify-center gap-8 h-[100vh] "
+            className="flex flex-col items-center justify-center h-screen gap-8"
             data-aos="zoom-in"
           >
             <img
@@ -83,16 +83,15 @@ export default function Home() {
               <p className="text-xl font-semibold text-gray">
                 Welcome! You can find my personal information, projects and
                 career history on this website.
-              </p>
-              <p className="text-xl font-semibold text-gray">
+              
                 If you desire to work with me please contact me.
               </p>
             </div>
           </div>
-          <div data-aos="zoom-in" className="relative flex justify-center items-center w-full px-8 text-4xl font-medium text-center lg:text-6xl text-gray h-[100vh]">
+          <div data-aos="zoom-in" className="relative flex items-center justify-center w-full h-screen px-8 text-4xl font-medium text-center lg:text-6xl text-gray">
             {speechLoop}
           </div>
-          <div className="flex flex-col items-center justify-center gap-8 pb-24">
+          <div className="flex flex-col items-center justify-center gap-12 pb-24">
             <div className="mb-24 cards-wrapper">
               <h2 className="font-light text-7xl text-semigray">Frontend</h2>
               <p className="text-lg font-medium text-gray">

@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <div className="background-css">
       <div className="container">
-        <div className="flex items-center flex-col h-[100vh] gap-12">
+        <div className="flex flex-col items-center h-screen gap-12">
           <div>
             <h1 className="flex items-center py-8 pt-12 font-bold text-center lg:py-24 text-7xl text-gray">Contact me</h1>
           </div>

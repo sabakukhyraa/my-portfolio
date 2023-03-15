@@ -100,9 +100,9 @@ a.active {
 }
 
 .cards-wrapper {
-  @apply flex flex-col w-full gap-12 lg:px-60;
+  @apply flex flex-col w-full gap-12 lg:text-start text-center;
 }
 
 .cards-wrapper ul {
-  @apply grid w-full grid-cols-1 lg:grid-cols-2 gap-12;
+  @apply grid w-full grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12 ;
 }

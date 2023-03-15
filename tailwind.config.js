@@ -9,15 +9,16 @@ module.exports = {
       xl: "1080px",
       "2xl": "1174px",
       "3xl": "1374px",
-      "4xl": "1504px",
-      "5xl": "1750px",
-      "6xl": "2080px",
     },
     extend: {
       container: {
         center: true,
         padding: {
           DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
         },
       },
       colors: {
