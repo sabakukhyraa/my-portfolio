@@ -12,7 +12,7 @@
   @apply block w-full aspect-video rounded-xl object-cover object-left-top;
 }
 .swiper-slide h3 {
-  @apply text-2xl 2xl:text-3xl text-white font-medium py-2;
+  @apply text-xl 2xl:text-3xl text-white font-medium py-2;
 }
 .swiper-slide p {
   @apply text-lg 2xl:text-xl text-gray font-medium py-2 text-center;

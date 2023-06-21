@@ -13,6 +13,7 @@ import linkedinLogo from "../assets/linkedin.png";
 import githubLogo from "../assets/github.png";
 import instagramLogo from "../assets/instagram.png";
 import epigraLogo from "../assets/epigra.png";
+import hogarthLogo from "../assets/hogarth.jpg";
 import fiLogo from "../assets/fi.png";
 import sassLogo from "../assets/sass.png"
 export const techsIUse = {
@@ -124,6 +125,16 @@ export const contents = [
 
 export const experiences = [
   {
+    companyName: "Hogarth",
+    companyLogo: hogarthLogo,
+    title: "Frontend Developer",
+    since: "Mar 2023",
+    still: true,
+    until: "",
+    thoughts:
+      "I develop and localize the website of one of the largest and most iconic tech companies in the world for Central East Europe and Middle East countries.",
+  },
+  {
     companyName: "Epigra",
     companyLogo: epigraLogo,
     title: "Frontend Developer",
@@ -141,7 +152,7 @@ export const experiences = [
     still: true,
     until: "",
     thoughts:
-      "I was doing static websites at the beginning that I don't proud of... I learned so much stuff with those projects but still, I can't even look at what I did :D. And I do better web applications with React and Vue these days.",
+      "I'm working on projects that everything related to frontend. Developing, localization, animations, bug fixing...",
   },
 ];
 
@@ -151,7 +162,7 @@ export const projects = [
     link: "",
     image: "/ptv.jpg",
     description:
-    "The biggest project that I worked on. The source of my confidence. A video-sharing and social media platform for company employees. I've learned so many things with this project.",
+    "The first large project that I worked on. A video-sharing and social media platform for company employees. I've learned so many things with this project.",
     tags: [vueLogo , tailwindLogo]
   },
   {
@@ -170,18 +181,18 @@ export const projects = [
     tags: [sassLogo, jsLogo, bootstrapLogo]
   },
   {
-    name: "Agenda Project",
-    link: "https://your-agenda.netlify.app/",
-    image: "/agenda-react.png",
-    description: "Small app to understand state managment of React better.",
+    name: "Uzm. Dr. Emre Metin",
+    link: "https://www.dremremetin.com",
+    image: "/dremremetin.jpeg",
+    description: "Developing and designing the whole website.",
     tags: [reactLogo, tailwindLogo]
   },
   {
-    name: "Fifa Cards",
-    link: "https://fifa-cards-react.netlify.app/",
-    image: "/fifa-cards.png",
-    description: "React practice with a fifa card market and filter.",
-    tags: [reactLogo, tailwindLogo]
+    name: "Dünyagöz",
+    link: "#",
+    image: "/null.jpg",
+    description: "Localizing the website to Arabic. It was messy but I found a nice and quick solution.",
+    tags: [sassLogo, jsLogo, bootstrapLogo]
   },
   {
     name: "İstaç",
@@ -196,5 +207,19 @@ export const projects = [
     image: "/null.jpg",
     description: "Small contributions like bug fixing.",
     tags: [sassLogo, jsLogo, bootstrapLogo]
+  },
+  {
+    name: "Agenda Project",
+    link: "https://your-agenda.netlify.app/",
+    image: "/agenda-react.png",
+    description: "Small app to understand state managment of React better.",
+    tags: [reactLogo, tailwindLogo]
+  },
+  {
+    name: "Fifa Cards",
+    link: "https://fifa-cards-react.netlify.app/",
+    image: "/fifa-cards.png",
+    description: "React practice with a fifa card market and filter.",
+    tags: [reactLogo, tailwindLogo]
   },
 ];

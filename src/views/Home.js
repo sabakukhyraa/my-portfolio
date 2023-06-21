@@ -1,8 +1,34 @@
 import { useEffect, useState } from "react";
 import { techsIUse, contents } from "../helpers/data";
 import AOS from "aos";
+import { experiences } from "../helpers/data";
 
 export default function Home() {
+
+  const carrierHistory = experiences.map((experience, index) => (
+    <li
+      key={index}
+      className="flex flex-col items-center gap-8 p-6 2xl:p-8 lg:flex-row rounded-xl bg-back-front"
+    >
+      <img
+        className="self-start object-contain w-24 h-24 rounded-lg lg:self-center lg:w-52 lg:h-52 aspect-square"
+        src={experience.companyLogo}
+        alt={experience.companyName}
+      />
+      <div className="flex flex-col justify-center gap-2">
+        <h2 className="text-4xl font-bold lg:text-6xl">
+          {experience.companyName}
+        </h2>
+        <h3 className="text-xl font-bold lg:text-2xl">{experience.title}</h3>
+        <p>{experience.thoughts}</p>
+        <span className="text-white">
+          {experience.since}
+          {!experience.still ? ` - ${experience.until}` : " - Still"}
+        </span>
+      </div>
+    </li>
+  ));
+
   const [activeSpeech, setActiveSpeech] = useState(0);
 
   const bilmemne = setInterval(() => {
@@ -46,7 +72,7 @@ export default function Home() {
           style={{
             boxShadow: "inset 0px 0px 31px -20px" + item.itemBaseColor,
           }}
-          className="flex justify-between h-full gap-4 p-4 m-1 transition-all duration-300 ease-in-out rounded-lg bg-back-front hover:scale-105"
+          className="flex flex-col justify-between h-full gap-4 p-6 m-1 transition-all duration-300 ease-in-out rounded-lg 2xl:p-8 2xl:flex-row bg-back-front hover:scale-105"
         >
           <img
             className="object-contain w-20 h-20 rounded-lg lg:w-40 lg:h-40 aspect-square"
@@ -54,7 +80,7 @@ export default function Home() {
             alt={item.itemName}
           />
           <div className="flex flex-col overflow-hidden place-content-between">
-            <p className="text-lg break-words whitespace-pre-wrap text-gray">{item.thoughts}</p>
+            <p className="text-lg break-words whitespace-pre-wrap text-start text-gray">{item.thoughts}</p>
           </div>
         </div>
       </li>
@@ -73,7 +99,7 @@ export default function Home() {
               src="/profile.png"
               alt="profile"
             />
-            <h1 className="text-5xl font-bold text-gray neon-text">
+            <h1 className="text-[42px] font-bold text-gray neon-text">
               Ali Kerem Ata
             </h1>
             <h2 className="text-2xl font-semibold text-gray">
@@ -92,10 +118,14 @@ export default function Home() {
             {speechLoop}
           </div>
           <div className="flex flex-col items-center justify-center gap-12 pb-24">
+            <div className="space-y-12">
+              <h2 className="font-light text-7xl text-semigray">Carrier</h2>
+              <ul className="space-y-8 text-gray">{carrierHistory}</ul>
+            </div>
             <div className="mb-24 cards-wrapper">
               <h2 className="font-light text-7xl text-semigray">Frontend</h2>
               <p className="text-lg font-medium text-gray">
-                I'm working as a Frontend Developer for 1.5 years. I think
+                I'm working as a Frontend Developer for 2 years. I think
                 writing Frontend is perfect for reducing stress!
               </p>
               <ul>{skills(techsIUse.Frontend)}</ul>
