@@ -4,7 +4,6 @@ import AOS from "aos";
 import { experiences } from "../helpers/data";
 
 export default function Home() {
-
   const carrierHistory = experiences.map((experience, index) => (
     <li
       key={index}
@@ -68,19 +67,16 @@ export default function Home() {
         <h3 className="py-2 text-2xl font-semibold text-gray">
           {item.itemName}
         </h3>
-        <div
-          style={{
-            boxShadow: "inset 0px 0px 31px -20px" + item.itemBaseColor,
-          }}
-          className="flex flex-col justify-between h-full gap-4 p-6 m-1 transition-all duration-300 ease-in-out rounded-lg 2xl:p-8 2xl:flex-row bg-back-front hover:scale-105"
-        >
+        <div className="flex flex-col justify-between h-full gap-4 p-6 m-1 transition-all duration-300 ease-in-out rounded-lg 2xl:p-8 2xl:flex-row bg-back-front hover:scale-105">
           <img
             className="object-contain w-20 h-20 rounded-lg lg:w-40 lg:h-40 aspect-square"
             src={`${item.itemLogo}`}
             alt={item.itemName}
           />
           <div className="flex flex-col overflow-hidden place-content-between">
-            <p className="text-lg break-words whitespace-pre-wrap text-start text-gray">{item.thoughts}</p>
+            <p className="text-lg break-words whitespace-pre-wrap text-start text-gray">
+              {item.thoughts}
+            </p>
           </div>
         </div>
       </li>
@@ -96,7 +92,7 @@ export default function Home() {
           >
             <img
               className="object-contain w-40 h-40 rounded-full shadow-lg aspect-square"
-              src="/profile.png"
+              src="/profile.jpeg"
               alt="profile"
             />
             <h1 className="text-[42px] font-bold text-gray neon-text">
@@ -108,13 +104,15 @@ export default function Home() {
             <div className="text-center">
               <p className="text-xl font-semibold text-gray">
                 Welcome! You can find my personal information, projects and
-                career history on this website.
-              
-                If you desire to work with me please contact me.
+                career history on this website. If you desire to work with me
+                please contact me.
               </p>
             </div>
           </div>
-          <div data-aos="zoom-in" className="relative flex items-center justify-center w-full h-screen px-8 text-4xl font-medium text-center lg:text-6xl text-gray">
+          <div
+            data-aos="zoom-in"
+            className="relative flex items-center justify-center w-full h-screen px-8 text-4xl font-medium text-center lg:text-6xl text-gray"
+          >
             {speechLoop}
           </div>
           <div className="flex flex-col items-center justify-center gap-12 pb-24">
@@ -125,16 +123,17 @@ export default function Home() {
             <div className="mb-24 cards-wrapper">
               <h2 className="font-light text-7xl text-semigray">Frontend</h2>
               <p className="text-lg font-medium text-gray">
-                I'm working as a Frontend Developer for 2 years. I think
-                writing Frontend is perfect for reducing stress!
+                I'm working as a Frontend Developer for 4 years. I think writing
+                Frontend is perfect for reducing stress!
               </p>
               <ul>{skills(techsIUse.Frontend)}</ul>
             </div>
             <div className="cards-wrapper">
               <h2 className="font-light text-7xl text-semigray">Backend</h2>
               <p className="text-lg font-medium text-gray">
-                I'm pretty new at Backend. I'm trying to learn everything and
-                while I learn Backend, I understand Frontend better.
+                I love writing REST APIs with regular model-view-controller
+                method and GraphQL APIs and I want to learn more about modular
+                monolithic architecture!
               </p>
               <ul>{skills(techsIUse.Backend)}</ul>
             </div>
