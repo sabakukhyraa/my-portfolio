@@ -49,7 +49,7 @@
 
 .neon-text {
   color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #00a
+  text-shadow: 0 0 7px #fff, 0 0 10px #00a;
 }
 
 * {
@@ -89,7 +89,7 @@
   background-image: url("https://st.depositphotos.com/1005844/1394/i/600/depositphotos_13943952-stock-photo-snowy-mountains.jpg");
 }
 .navbar li:nth-child(3) {
-  background-image: url("https://www.cimri.com/blog/wp-content/uploads/2015/06/Manzara-Foto%C4%9Fraf%C4%B1.jpg");
+  background-image: url("https://images.pexels.com/photos/1172064/pexels-photo-1172064.jpeg");
 }
 .navbar li:nth-child(4) {
   background-image: url("https://images.pexels.com/photos/449018/pexels-photo-449018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -104,5 +104,5 @@ a.active {
 }
 
 .cards-wrapper ul {
-  @apply grid w-full grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12 ;
+  @apply grid w-full grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12;
 }
