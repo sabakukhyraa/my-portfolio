@@ -146,16 +146,6 @@ export const experiences = [
       "I develop and localize the website of one of the largest and most iconic tech companies in the world for 30+ countries. Also, I write script codes and develop Chrome extensions and desktop applications(tools) for various teams through a private github to accelerate their work.",
   },
   {
-    companyName: "Epigra",
-    companyLogo: epigraLogo,
-    title: "Frontend Developer",
-    since: "June 2022",
-    still: false,
-    until: "Jan 2023",
-    thoughts:
-      "It was my first job. I started as an intern and got the job in the end! I gained amazing experience there. Excellent co-workers. Fun projects!",
-  },
-  {
     companyName: "Freelance",
     companyLogo: fiLogo,
     title: "Software Developer",
@@ -164,6 +154,16 @@ export const experiences = [
     until: "",
     thoughts:
       "Developed and delivered over 20 freelance projects, working as both a backend and frontend developer for mobile and web applications. Built scalable and efficient backend systems while also crafting intuitive and responsive user interfaces. Worked with various tech stacks, adapting to project requirements and client needs. Focused on delivering high-quality, maintainable, and performant applications.",
+  },
+  {
+    companyName: "Epigra",
+    companyLogo: epigraLogo,
+    title: "Frontend Developer",
+    since: "June 2022",
+    still: false,
+    until: "Jan 2023",
+    thoughts:
+      "It was my first job. I started as an intern and got the job in the end! I gained amazing experience there. Excellent co-workers. Fun projects!",
   },
 ];
 
