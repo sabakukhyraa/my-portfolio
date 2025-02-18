@@ -11,11 +11,10 @@ import graphqlLogo from "../assets/graphql.png";
 import laravelLogo from "../assets/laravel.png";
 import linkedinLogo from "../assets/linkedin.png";
 import githubLogo from "../assets/github.png";
-import instagramLogo from "../assets/instagram.png";
 import epigraLogo from "../assets/epigra.png";
 import hogarthLogo from "../assets/hogarth.jpg";
 import fiLogo from "../assets/fi.png";
-import sassLogo from "../assets/sass.png"
+import sassLogo from "../assets/sass.png";
 export const techsIUse = {
   Frontend: [
     {
@@ -37,7 +36,21 @@ export const techsIUse = {
       itemLogo: reactLogo,
       itemBaseColor: "#61DBFB",
       thoughts:
-        "It's easy to find what you want to do with React on the internet. I did some projects with React and I'm pretty confident with it.",
+        "It's easy to find what you want to do with React on the internet. I did plenty of projects with React.",
+    },
+    {
+      itemName: "React Native",
+      itemLogo: reactLogo,
+      itemBaseColor: "#61DBFB",
+      thoughts:
+        "It's easy to find what you want to do with React on the internet. I did plenty of projects with React.",
+    },
+    {
+      itemName: "Next.js",
+      itemLogo: reactLogo,
+      itemBaseColor: "#61DBFB",
+      thoughts:
+        "Next.js is a fantastic framework that speeds up the development process and makes working with React more enjoyable. However, there are moments when it feels a bit too magical, making me feel like I've lost some control.",
     },
     {
       itemName: "Vue.js",
@@ -59,13 +72,6 @@ export const techsIUse = {
       itemBaseColor: "#11aAEe",
       thoughts:
         "I've been working with Tailwind for a long time. Although I don't like how they market CSS properties as their own properties, I use it for the speed and convenience it provides.",
-    },
-    {
-      itemName: "Bootstrap",
-      itemLogo: bootstrapLogo,
-      itemBaseColor: "#8f4Cff",
-      thoughts:
-        "I use bootstrap when I need to make quick projects. Great UI Components.",
     },
   ],
   Backend: [
@@ -91,7 +97,8 @@ export const techsIUse = {
       itemName: "PHP/Laravel",
       itemLogo: laravelLogo,
       itemBaseColor: "#ff2222",
-      thoughts: "I've some projects with Laravel but I didn't like the documentation.",
+      thoughts:
+        "I've some projects with Laravel but I didn't like the documentation.",
     },
   ],
 };
@@ -106,11 +113,6 @@ export const socialMedia = [
     itemName: "Github",
     itemLogo: githubLogo,
     url: "https://www.github.com/sabakukhyraa",
-  },
-  {
-    itemName: "Instagram",
-    itemLogo: instagramLogo,
-    url: "https://www.instagram.com/khyraaranger/",
   },
 ];
 
@@ -162,8 +164,8 @@ export const projects = [
     link: "",
     image: "/ptv.jpg",
     description:
-    "The first large project that I worked on. A video-sharing and social media platform for company employees. I've learned so many things with this project.",
-    tags: [vueLogo , tailwindLogo]
+      "The first large project that I worked on. A video-sharing and social media platform for company employees. I've learned so many things with this project.",
+    tags: [vueLogo, tailwindLogo],
   },
   {
     name: "Ziv4 Trade Pilot & Project Setup",
@@ -171,55 +173,57 @@ export const projects = [
     image: "/ziv4.png",
     description:
       "It's just a test project and ready to connect with Backend. And that Donut Chart right there is a talent, I tell you that...",
-    tags: [reactLogo, tailwindLogo]
+    tags: [reactLogo, tailwindLogo],
   },
   {
     name: "Epigra 2022 Internal Project",
     link: "http://epigra.com/",
     image: "/epigra.png",
-    description: "A website for Epigra. Small contributions. Excellent design. The project I had the most difficulty with in its UI.",
-    tags: [sassLogo, jsLogo, bootstrapLogo]
+    description:
+      "A website for Epigra. Small contributions. Excellent design. The project I had the most difficulty with in its UI.",
+    tags: [sassLogo, jsLogo, bootstrapLogo],
   },
   {
     name: "Uzm. Dr. Emre Metin",
     link: "https://www.dremremetin.com",
     image: "/dremremetin.jpeg",
     description: "Developing and designing the whole website.",
-    tags: [reactLogo, tailwindLogo]
+    tags: [reactLogo, tailwindLogo],
   },
   {
     name: "Dünyagöz",
     link: "#",
     image: "/null.jpg",
-    description: "Localizing the website to Arabic. It was messy but I found a nice and quick solution.",
-    tags: [sassLogo, jsLogo, bootstrapLogo]
+    description:
+      "Localizing the website to Arabic. It was messy but I found a nice and quick solution.",
+    tags: [sassLogo, jsLogo, bootstrapLogo],
   },
   {
     name: "İstaç",
     link: "#",
     image: "/null.jpg",
     description: "Small contributions like forms.",
-    tags: [vueLogo, tailwindLogo]
+    tags: [vueLogo, tailwindLogo],
   },
   {
     name: "Eczacıbaşı",
     link: "#",
     image: "/null.jpg",
     description: "Small contributions like bug fixing.",
-    tags: [sassLogo, jsLogo, bootstrapLogo]
+    tags: [sassLogo, jsLogo, bootstrapLogo],
   },
   {
     name: "Agenda Project",
     link: "https://your-agenda.netlify.app/",
     image: "/agenda-react.png",
     description: "Small app to understand state managment of React better.",
-    tags: [reactLogo, tailwindLogo]
+    tags: [reactLogo, tailwindLogo],
   },
   {
     name: "Fifa Cards",
     link: "https://fifa-cards-react.netlify.app/",
     image: "/fifa-cards.png",
     description: "React practice with a fifa card market and filter.",
-    tags: [reactLogo, tailwindLogo]
+    tags: [reactLogo, tailwindLogo],
   },
 ];
