@@ -15,6 +15,9 @@ import epigraLogo from "../assets/epigra.png";
 import hogarthLogo from "../assets/hogarth.jpg";
 import fiLogo from "../assets/fi.png";
 import sassLogo from "../assets/sass.png";
+import nextLogo from "../assets/nextjs.png";
+import mysqlLogo from "../assets/mysql.png";
+import expoLogo from "../assets/expo.png";
 export const techsIUse = {
   Frontend: [
     {
@@ -22,14 +25,7 @@ export const techsIUse = {
       itemLogo: jsLogo,
       itemBaseColor: "#F0DB4F",
       thoughts:
-        "I really love JS! It's just perfect and it's my favorite language.",
-    },
-    {
-      itemName: "Typescript",
-      itemLogo: tsLogo,
-      itemBaseColor: "#007acc",
-      thoughts:
-        "It can be useful in large-scale projects like 100+ classes and 10+ developers.",
+        "I really love JS and I can do anything with it! It's just perfect and it's my favorite language.",
     },
     {
       itemName: "React.js",
@@ -43,12 +39,12 @@ export const techsIUse = {
       itemLogo: reactLogo,
       itemBaseColor: "#61DBFB",
       thoughts:
-        "It's easy to find what you want to do with React on the internet. I did plenty of projects with React.",
+        "I have developed more than five professional mobile applications using React Native. I also build my own products with React Native—shoutout to Expo!",
     },
     {
       itemName: "Next.js",
-      itemLogo: reactLogo,
-      itemBaseColor: "#61DBFB",
+      itemLogo: nextLogo,
+      itemBaseColor: "#00000",
       thoughts:
         "Next.js is a fantastic framework that speeds up the development process and makes working with React more enjoyable. However, there are moments when it feels a bit too magical, making me feel like I've lost some control.",
     },
@@ -79,26 +75,41 @@ export const techsIUse = {
       itemName: "Node.js",
       itemLogo: nodeLogo,
       itemBaseColor: "#3C873A",
-      thoughts: "",
+      thoughts: "Long live the king.",
+    },
+    {
+      itemName: "Typescript",
+      itemLogo: tsLogo,
+      itemBaseColor: "#007acc",
+      thoughts:
+        "Thanks to TypeScript for allowing me to see every property and method of the objects I use through a dropdown in VS Code.",
     },
     {
       itemName: "MongoDB",
       itemLogo: mongodbLogo,
       itemBaseColor: "#4DB33D",
-      thoughts: "",
+      thoughts:
+        "The freedom of a flexible schema is pure bliss. With Mongoose, managing MongoDB feels almost too smooth to be real.",
+    },
+    {
+      itemName: "MySQL",
+      itemLogo: mysqlLogo,
+      itemBaseColor: "#4DB33D",
+      thoughts:
+        "SQL's structured beauty never ceases to amaze me. Its reliability and consistency make it my go-to choice for relational data. Also, love to do normalization.",
     },
     {
       itemName: "GraphQL",
       itemLogo: graphqlLogo,
       itemBaseColor: "#e535ab",
-      thoughts: "",
+      thoughts:
+        "Asking only for what I need and getting precisely that—absolute perfection. It turns data fetching into an art rather than a struggle.",
     },
     {
       itemName: "PHP/Laravel",
       itemLogo: laravelLogo,
       itemBaseColor: "#ff2222",
-      thoughts:
-        "I've some projects with Laravel but I didn't like the documentation.",
+      thoughts: "I've some projects with Laravel.",
     },
   ],
 };
@@ -117,10 +128,8 @@ export const socialMedia = [
 ];
 
 export const contents = [
-  "I'm 21.",
+  "I'm 24.",
   "I'm from Istanbul, Turkiye.",
-  "I'm studying Information Technologies Engineering at Piri Reis University.",
-  "I'm learning everything about web.",
   "I believe engineering is the perfect planning of solutions with foresight.",
   "My dream is to be one of the best engineers.",
 ];
@@ -134,7 +143,7 @@ export const experiences = [
     still: true,
     until: "",
     thoughts:
-      "I develop and localize the website of one of the largest and most iconic tech companies in the world for Central East Europe and Middle East countries.",
+      "I develop and localize the website of one of the largest and most iconic tech companies in the world for 30+ countries. Also, I write script codes and develop Chrome extensions and desktop applications(tools) for various teams through a private github to accelerate their work.",
   },
   {
     companyName: "Epigra",
@@ -149,16 +158,39 @@ export const experiences = [
   {
     companyName: "Freelance",
     companyLogo: fiLogo,
-    title: "Frontend Developer",
+    title: "Software Developer",
     since: "Jan 2022",
     still: true,
     until: "",
     thoughts:
-      "I'm working on projects that everything related to frontend. Developing, localization, animations, bug fixing...",
+      "Developed and delivered over 20 freelance projects, working as both a backend and frontend developer for mobile and web applications. Built scalable and efficient backend systems while also crafting intuitive and responsive user interfaces. Worked with various tech stacks, adapting to project requirements and client needs. Focused on delivering high-quality, maintainable, and performant applications.",
   },
 ];
 
 export const projects = [
+  {
+    name: "Kafin",
+    link: "https://kafin.app",
+    image: "/kafin.png",
+    description:
+      "My own product. A mobile application that specifically makes it easier for local and small-scale cafés to run customer loyalty campaigns.",
+    tags: [expoLogo, reactLogo, nodeLogo, mongodbLogo, tsLogo],
+  },
+  {
+    name: "Altın Köprü",
+    link: "https://play.google.com/store/apps/details?id=com.sabakukhyraa.altinkopru",
+    image: "/altinkopru.png",
+    description:
+      "A Freelance b2b cross-platform mobile app project for jewelers",
+    tags: [expoLogo, reactLogo, laravelLogo, mysqlLogo],
+  },
+  {
+    name: "EasyFish Oil - EasyClub",
+    link: "",
+    image: "/easyfishoil.png",
+    description: "",
+    tags: [sassLogo, jsLogo, bootstrapLogo],
+  },
   {
     name: "Arçelik/Beko Perakende TV",
     link: "",
@@ -169,7 +201,7 @@ export const projects = [
   },
   {
     name: "Ziv4 Trade Pilot & Project Setup",
-    link: "https://ziv4-pilot.netlify.app/",
+    link: "",
     image: "/ziv4.png",
     description:
       "It's just a test project and ready to connect with Backend. And that Donut Chart right there is a talent, I tell you that...",
@@ -177,7 +209,7 @@ export const projects = [
   },
   {
     name: "Epigra 2022 Internal Project",
-    link: "http://epigra.com/",
+    link: "https://epigra.com/",
     image: "/epigra.png",
     description:
       "A website for Epigra. Small contributions. Excellent design. The project I had the most difficulty with in its UI.",
@@ -214,7 +246,7 @@ export const projects = [
   },
   {
     name: "Agenda Project",
-    link: "https://your-agenda.netlify.app/",
+    link: "",
     image: "/agenda-react.png",
     description: "Small app to understand state managment of React better.",
     tags: [reactLogo, tailwindLogo],
